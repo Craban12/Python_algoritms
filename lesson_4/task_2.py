@@ -38,3 +38,29 @@ def sieve2(n):
 
 cProfile.run('sieve1(10000)')
 cProfile.run('sieve2(10000)')
+
+"""
+1233 function calls in 0.103 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.103    0.103 <string>:1(<module>)
+        1    0.017    0.017    0.103    0.103 task_2.py:11(sieve1)
+        1    0.000    0.000    0.103    0.103 {built-in method builtins.exec}
+     1229    0.087    0.000    0.087    0.000 {built-in method builtins.min}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         10006 function calls in 0.010 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.010    0.010 <string>:1(<module>)
+        1    0.008    0.008    0.010    0.010 task_2.py:19(sieve2)
+        1    0.000    0.000    0.010    0.010 {built-in method builtins.exec}
+    10001    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'remove' of 'set' objects}
+"""
